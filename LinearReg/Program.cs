@@ -59,9 +59,9 @@ namespace LinearReg
           {
             string line = sr.ReadLine();
 
-            string[] fields = line.Split(',');
+            string[] fields = line.Split(';');
 
-            if (fields.Length != 5)
+            if (fields.Length != 6)
             {
               Console.WriteLine("Cannot parse the minute data: {0}", line);
               return;
